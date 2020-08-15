@@ -68,8 +68,3 @@ router.delete('/:id',async (req,res,next) =>{
 
 module.exports = router;
 
-validateBody(Joi.object().keys({
-    name: Joi.string().required(),
-  	age: Joi.number().required(),
-  	colour: Joi.string().required()
-  }))
